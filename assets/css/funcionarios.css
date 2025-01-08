@@ -1,0 +1,183 @@
+/* Container Principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Formulário */
+.form-container {
+    background: #f4f4f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho do Formulário */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Grupo do Formulário */
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Rótulos */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #242424;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Campos de Entrada */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do link para parecer um botão */
+a.button {
+    display: inline-block; /* Faz o link se comportar como um botão */
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Alinha o texto no centro */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: background-color 0.3s, transform 0.2s; /* Animações suaves */
+}
+
+/* Estilo quando o mouse passa sobre o botão */
+a.button:hover {
+    background-color: #0056b3; /* Cor mais escura para o hover */
+    transform: scale(1.05); /* Aumenta um pouco o botão */
+}
+
+/* Mensagens de Erro */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: #f8d7da;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Tabela */
+.table-container {
+    background: #f4f4f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Cabeçalho da Tabela */
+table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Linhas Alternadas */
+table tbody tr:nth-child(even) {
+    background-color: #384980;
+    color: #ffffff;
+}
+
+/* Links de Ações */
+table a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form-container,
+    .table-container {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+}

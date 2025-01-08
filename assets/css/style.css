@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cbcbf4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 60px; 
+}
+
+/* Estilos para o Menu */
+nav {
+    background-color: #007bff; /* Cor azul moderna */
+    padding: 10px 20px; 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px; /* Espaçamento uniforme entre os itens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Texto branco */
+    font-weight: 600; /* Texto mais grosso */
+    font-size: 16px;
+    transition: color 0.3s, transform 0.2s; /* Animação suave */
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Cor amarelo-destaque */
+    transform: scale(1.1); /* Leve aumento no tamanho */
+}
+
+/* Estilos para o Footer */
+footer {
+    background-color: #343a40; /* Cinza escuro */
+    color: #ffffff; /* Texto branco */
+    text-align: center;
+    padding: 15px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra superior */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Menu vertical em telas pequenas */
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaço maior entre itens no menu vertical */
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
